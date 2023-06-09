@@ -1,4 +1,5 @@
 ---
+import PlanButton from "../../button/PlanButton.astro";
     const {
         planName, 
         price, 
@@ -10,9 +11,16 @@
         isPopular
     } = Astro.props
 ---
-<div class="w-full max-w-[22rem] flex justify-between items-start flex-col bg-white/10 rounded-2xl p-8 text-[#aaa] shadow-inner shadow-white/20">
+<div class="w-full lg:max-w-[22rem] flex justify-between items-start flex-col bg-white/10 rounded-2xl p-8 text-[#aaa] shadow-inner shadow-white/20">
     <div class="w-full h-auto">
-        <h1 class="text-4xl text-white font-semibold pb-4">{planName}</h1>
+        <span class="flex justify-start items-start gap-2">
+            <h1 class="text-4xl text-white font-semibold pb-4">{planName}</h1>
+            {
+                isPopular
+                ? <div class="px-2 h-6 text-[#ddd] border-[1px] border-[#444] flex justify-center items-center rounded-full font-medium text-sm">Popular</div>
+                : <></> 
+            }
+        </span>
         <span class="w-full flex justify-start items-center gap-x-1 my-2">
             <h1 class="text-white text-2xl font-medium">{price}</h1>
             <h3>{planTime}</h3>
@@ -34,5 +42,5 @@
             : <></>
         }
     </div>
-    <button class="bottom-0 mt-4 bg-white transition-all hover:scale-105 hover:bg-[#ddd] rounded-full py-2 px-4 text-black text-lg font-semibold">{buttonName}</button>
+    <PlanButton texto={buttonName} />
 </div>
