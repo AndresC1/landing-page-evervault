@@ -1,7 +1,9 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import Home from "../components/landing/home/Home.astro";
-import PlansComparation from "../components/PlanComparation/PlanComparation.jsx";
+import PlansComparation from "../components/PlanComparation/PlanComparation";
+import Contact from "../components/landing/contact/Contact.astro";
+import Footer from "../components/footer/Footer.astro";
 ---
 
 <html lang="es">
@@ -15,6 +17,8 @@ import PlansComparation from "../components/PlanComparation/PlanComparation.jsx"
 		<Navbar />
 		<Home  />
 		<PlansComparation client:only />
+		<Contact />
+		<Footer/>
 		<script src="../js/main.js"></script>
 	</body>
 </html>
