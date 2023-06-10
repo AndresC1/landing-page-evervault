@@ -11,7 +11,7 @@ export default function TableColumn({firstTitle, buttonTitle, isTitled}) {
         return dataColumn
     }
   return (
-    <div className="w-full flex justify-center items-center gap-2 p-4 border--[1px] border-[#333] flex-col">
+    <div className="w-full flex justify-center items-center gap-2 p-4 border-b-[1px] border-[#333] flex-col">
             {
                 isTitled ? <h1 className="text-2xl font-medium text-white">{firstTitle}</h1> : verificationCheck(firstTitle)
             }
