@@ -1,5 +1,6 @@
 ---
 import CardOfPrice from "./CardOfPrice.astro";
+import './styleHome.css'
 ---
 
 <div class="flex items-center flex-col px-4">
@@ -12,5 +13,5 @@ import CardOfPrice from "./CardOfPrice.astro";
         <CardOfPrice planName={"Pro"} price={"$395"} planTime={"per month"} description={"Run production apps with full functionality"} benefits={["Unimited Encrypts", "5,000 Decrypts", "2,500 Cage Runs"]} buttonName={"Start Free Trial"} isPopular=true freeTest=true />
         <CardOfPrice planName={"Enterprise"} planTime={"Custom pricing"} description={"Run compliant production apps with full functionality onboarding and support."} benefits={["Unlimited Encrypts", "Custom Decrypts", "Custom Cage Runs", "Fast-tracked PCI & HIPPA"]} buttonName={"Get Started"} />
     </section>
-    <div class="hidden md:block absolute top-20 w-20 h-20 p-60 blur-3xl bg-purple-600/20 rounded-full -z-10"></div>
+    <div id="ColorBox" class="hidden md:block absolute top-20 p-60 blur-3xl rounded-full -z-10"></div>
 </div>
