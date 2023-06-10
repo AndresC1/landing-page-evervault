@@ -1,0 +1,17 @@
+---
+import dataButton from "./ContactData.js"
+import ContactButton from "./ContactCard.astro";
+---
+
+<div class="w-full max-w-[80rem] flex flex-col md:flex-row justify-center items-stretch m-auto px-4 gap-4 my-32">
+    {
+        dataButton.map(Box => (
+            <ContactButton 
+                title={Box.title} 
+                subTitle={Box.subTitle} 
+                description={Box.description} 
+                titleButton={Box.titleButton} 
+            />
+        ))
+    }
+</div>
