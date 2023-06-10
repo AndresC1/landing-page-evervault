@@ -1,0 +1,39 @@
+#ColorBox{
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes colorChange {
+    0%{
+        background-color: rgb(147 51 234 / 0.2);
+        width: 5rem;
+        height: 5rem;
+    }
+    20%{
+        background-color: rgb(37 99 235 / 0.2);
+        width: 6rem;
+        height: 6rem;
+    }
+    40%{
+        background-color: rgb(220 38 38 / 0.2);
+        width: 7rem;
+        height: 7rem;
+    }
+    60%{
+        background-color: rgb(22 163 74 / 0.2);
+        width: 6rem;
+        height: 6rem;
+    }
+    80%{
+        background-color: rgb(202 138 4 / 0.2);
+        width: 5rem;
+        height: 5rem;
+    }
+    100%{
+        background-color: rgb(147 51 234 / 0.2);
+        width: 4rem;
+        height: 4rem;
+    }
+}
