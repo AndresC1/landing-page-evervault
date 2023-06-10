@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import Home from "../components/landing/home/Home.astro";
+import PlansComparation from "../components/PlanComparation/PlanComparation.jsx";
 ---
 
 <html lang="es">
@@ -12,7 +13,8 @@ import Home from "../components/landing/home/Home.astro";
 	</head>
 	<body class="bg-[#010314] text-[#babcd2]">
 		<Navbar />
-		<Home/>
+		<Home  />
+		<PlansComparation client:only />
 		<script src="../js/main.js"></script>
 	</body>
 </html>
