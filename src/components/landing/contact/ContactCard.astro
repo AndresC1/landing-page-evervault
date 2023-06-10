@@ -1,0 +1,14 @@
+---
+const {
+    title,
+    subTitle,
+    description,
+    titleButton,
+} = Astro.props
+---
+<div class="w-full p-8 shadow-inner shadow-white/20 bg-white/10 rounded-xl flex justify-between flex-col items-start gap-2">
+    <h1 class="w-full text-4xl font-medium text-white">{title}</h1>
+    <h2 class="font-light">{subTitle}</h>
+    <h3 class="text-[#ccc]">{description}</h3>
+    <button class="px-4 py-2 bg-white text-[#222] font-medium rounded-full mt-4">{titleButton}</button>
+</div>
